@@ -1,16 +1,23 @@
+import { useRef } from "react";
+
 const MobileMenu = ({menu, setMenu}) => {
   const hanndleClose = () => {
-    setMenu(!menu);
+    container.current.classList.add('fade-out-bck')
+    setTimeout(() => {
+      setMenu(!menu);
+      container.current.classList.remove('fade-out-bck')
+    }, 500)
   };
+  const container = useRef();
 
   return (
-    <div className="w-[100%] h-[100%] absolute top-0">
+    <div className="w-[100%] h-[100%] absolute top-0 lg:hidden overflow-x-hidden" ref={container}>
       <div 
         onClick={hanndleClose}
         className="bg-bgMobileMenu absolute top-0 w-[100%] h-[100%] z-0"
       >
       </div>
-      <div className="bg-secondary mt-[92px] mx-auto w-[327px] py-[40px] px-[24px] rounded-[10px] text-white z-10 relative">
+      <div className="bg-secondary mt-[92px] mx-auto w-[327px] py-[40px] px-[24px] rounded-[10px] text-white z-10 relative sm:absolute sm:right-[10px] fade-in-right">
         <ul className="flex flex-col items-center gap-[34px] border-b-[1px] border-b-grayViolet pb-[34px]">
           <li>Features</li>
           <li>Pricing</li>

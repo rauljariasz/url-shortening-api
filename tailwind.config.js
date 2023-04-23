@@ -25,6 +25,7 @@ export default {
       backgroundImage: {
         'bgShortenMobile': "url('/src/assets/bg-shorten-mobile.svg')",
         'bgShortenDesktop': "url('/src/assets/bg-shorten-desktop.svg')",
+        'bgIllustration': "url('/src/assets/illustration-working.svg')"
       }
     },
   },

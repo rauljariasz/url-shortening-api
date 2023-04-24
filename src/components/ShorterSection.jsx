@@ -133,7 +133,7 @@ const ShorterSection = () => {
               <img src={BrandIcon} alt="" />
             </div>
             <h3 className="text-center font-bold text-[18px] text-darkViolet md:text-start md:text-[22px]">Brand Recognition</h3>
-            <p className="text-[14px] text-gray-400 mt-[10px] text-center leading-6 md:text-start md:text-[16px] md:leading-7">Boost your brand recognition with each click. Generic links don&apos;t mean a thing. Branded links help instil confidence in your content.</p>
+            <p className="text-[14px] text-gray-400 mt-[10px] text-center leading-6 md:text-start md:text-[15px] md:leading-7">Boost your brand recognition with each click. Generic links don&apos;t mean a thing. Branded links help instil confidence in your content.</p>
           </div>
 
           {/* Card Detailed Records*/}
@@ -142,7 +142,7 @@ const ShorterSection = () => {
               <img src={DetailedIcon} alt="" />
             </div>
             <h3 className="text-center font-bold text-[18px] text-darkViolet md:text-start md:text-[22px]">Detailed Records</h3>
-            <p className="text-[14px] text-gray-400 mt-[10px] text-center leading-6 md:text-start md:text-[16px] md:leading-7">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions</p>
+            <p className="text-[14px] text-gray-400 mt-[10px] text-center leading-6 md:text-start md:text-[15px] md:leading-7">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions</p>
           </div>
 
           {/* Card Fully Customizable */}
@@ -151,7 +151,7 @@ const ShorterSection = () => {
               <img src={fullyIcon} alt="" />
             </div>
             <h3 className="text-center font-bold text-[18px] text-darkViolet md:text-start md:text-[22px]">Fully Customizable</h3>
-            <p className="text-[14px] text-gray-400 mt-[10px] text-center leading-6 md:text-start md:text-[16px] md:leading-7">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement</p>
+            <p className="text-[15px] text-gray-400 mt-[10px] text-center leading-6 md:text-start md:text-[14px] md:leading-7">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement</p>
           </div>
         </div>
       </div>

@@ -11,17 +11,31 @@ const ShorterSection = () => {
   }
 
   useEffect(() => {
+    localStorage.clear()
     fetchLinks()
+    setTimeout(() => {
+      console.log(links);
+    }, 1000)
   }, []);
 
   const handdleSubmit = (e) => {
     e.preventDefault();
+    if (url === '') {
+      console.log('patras');
+      return
+    }
     Shorter(url)
-      .then((res) => {
+    .then((res) => {
+      if (!res.ok) {
+        console.log(res.error_code);
+      }
       const { result } = res;
-      setLinks([result, ...links])
-      localStorage.setItem("links", JSON.stringify([result, ...links]))
-      })
+      if (Object.prototype.hasOwnProperty.call(result,'original_link')) {
+        console.log('llegamos');
+        setLinks([result, ...links])
+        localStorage.setItem("links", JSON.stringify([result, ...links]))
+      }
+    })
   }
 
   return (
@@ -58,7 +72,7 @@ const ShorterSection = () => {
 
       {/* Section */}
       <div>
-        asd
+        <button onClick={() => localStorage.clear()}>More</button>
       </div>
     </section>
   );

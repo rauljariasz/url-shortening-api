@@ -13,6 +13,20 @@ const ShorterSection = () => {
     if (link) setLinks(link)
   }
 
+  /* API Navigator clipboard Property */
+  const copyToClipboard = (str, e) => {
+    e.preventDefault()
+    setTimeout(() => {
+      e.target.textContent = "Copy"
+      e.target.classList.remove('copied')
+    }, 5000)
+    e.target.classList.add('copied')
+    e.target.textContent = "Copied!"
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText)
+      return navigator.clipboard.writeText(str);
+    return Promise.reject("The Clipboard API is not available.");
+  };
+
   /* Codigo de errores de la API */
   const errors = {
     1: "No URL specified",
@@ -51,7 +65,7 @@ const ShorterSection = () => {
   }
 
   return (
-    <section className="relative bg-blue-300 px-[24px] lg:px-[0px]">
+    <section className="relative bg-shorterSection px-[24px] lg:px-[0px]">
       {/* Shorten a link here */}
       <div className="w-full min-h-[160px] bg-bgShortenMobile translate-y-[-80px] bg-secondary bg-contain bg-no-repeat bg-right-top rounded-[10px] lg:w-[75%] lg:mx-[auto] lg:bg-bgShortenDesktop lg:bg-cover">
         <form className="w-full h-full p-[24px] flex flex-col gap-[15px] lg:flex-row lg:items-center lg:px-[60px] lg:py-[55px] relative">
@@ -73,12 +87,31 @@ const ShorterSection = () => {
       </div>
 
       {/* Shortened Links */}
-      <div className="bg-green-300 mt-[20px] translate-y-[-80px]">
+      <div className="mt-[20px] translate-y-[-80px] lg:w-[75%] lg:mx-auto">
         { links.length > 0 && links.map((link) => {
           return (
-            <div key={link.id} className="w-full h-full p-[24px] flex flex-col gap-[15px]">
-              <a href={link.full_short_link} target="_blank" rel="noreferrer">{link.original_link}</a>
-              <a href={link.full_short_link} target="_blank" rel="noreferrer">{link.full_short_link}</a>
+            <div key={link.code} className="mt-[20px] bg-white w-full h-full flex flex-col rounded-[10px] overflow-x-hidden lg:px-[10px] lg:py-[5px] lg:flex-row lg:justify-between">
+              <a 
+                className="overflow-x-hidden border-b-[1px] border-gray-300 p-[15px] lg:border-none"
+                href={link.full_short_link} 
+                target="_blank" 
+                rel="noreferrer"
+              >
+                <p className="text-[16px]">{link.original_link}</p>
+              </a>
+
+              <div className="lg:flex lg:items-center">
+                <a 
+                  className="p-[15px] text-primary inline-block"
+                  href={link.full_short_link} 
+                  target="_blank" rel="noreferrer"
+                >
+                  {link.full_short_link}
+                </a>
+                <form className="px-[15px] pb-[15px] lg:pb-0">
+                  <button onClick={() => copyToClipboard(link.full_short_link, event)} className="w-full h-[40px] bg-primary text-white rounded-[8px] transition-all hover:bg-hover lg:w-[103px] lg:h-[40px]">Copy</button>
+                </form>
+              </div>
             </div>
           )
         })}

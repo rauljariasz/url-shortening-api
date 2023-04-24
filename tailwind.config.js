@@ -17,7 +17,7 @@ export default {
       'hover': '#9be3e2',
       'error': '#f46262',
       'footer': '#232127',
-      'shortenSection': '#9e9aa7',
+      'shorterSection': '#eff1f7',
       'bgMobileMenu': '#00000088',
       'grayViolet': '#544a6d'
     },

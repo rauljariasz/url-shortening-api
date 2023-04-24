@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section className='px-[24px] overflow-x-hidden mb-[150px] lg:px-0 lg:mt-[75px]'>
       <div className='flex flex-col gap-[50px] lg:w-[75%] lg:mx-auto lg:flex-row-reverse lg:gap-[80px]'>
         <div className='lg:box-border lg:w-[40%]'>
-          <img src={illustration} alt="Ilustracion de persona trabajando en una laptop" className='min-w-[500px] lg:min-w-[860px]' />
+          <img src={illustration} alt="Ilustracion de persona trabajando en una laptop" className='min-w-[500px] lg:min-w-[860px] md:mx-auto' />
         </div>
         <div className='flex flex-col gap-[30px] items-center lg:w-[60%] lg:items-start lg:justify-center'>
           <h1 className='font-bold text-4xl text-center lg:text-7xl lg:text-start'>More than just shorter links</h1>

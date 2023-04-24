@@ -10,13 +10,19 @@ export default {
     fontFamily: {
       Poppins: ['Poppins', 'sans-serif'],
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'desktop': '1440px',
+    },
     colors: {
       ...colors,
       'primary': '#2acfcf',
       'secondary': '#3b3054',
       'hover': '#9be3e2',
       'error': '#f46262',
-      'footer': '#232127',
+      'darkViolet': '#232127',
       'shorterSection': '#eff1f7',
       'bgMobileMenu': '#00000088',
       'grayViolet': '#544a6d'

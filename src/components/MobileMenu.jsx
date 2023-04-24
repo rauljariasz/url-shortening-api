@@ -11,13 +11,14 @@ const MobileMenu = ({menu, setMenu}) => {
   const container = useRef();
 
   return (
-    <div className="w-[100%] h-[100%] absolute top-0 lg:hidden overflow-x-hidden" ref={container}>
+    <div className="w-[100%] h-[100%] fixed top-0 lg:hidden overflow-hidden" ref={container}>
       <div 
         onClick={hanndleClose}
-        className="bg-bgMobileMenu absolute top-0 w-[100%] h-[100%] z-0"
+        onTouchStart={hanndleClose}
+        className="bg-bgMobileMenu fixed top-0 w-[100%] h-[100%] z-0"
       >
       </div>
-      <div className="bg-secondary mt-[92px] mx-auto w-[327px] py-[40px] px-[24px] rounded-[10px] text-white z-10 relative sm:absolute sm:right-[10px] fade-in-right">
+      <div className="bg-secondary mt-[92px] mx-auto w-[327px] py-[40px] px-[24px] rounded-[10px] text-white z-10 sticky sm:absolute sm:right-[10px] fade-in-right" onTouchMove={hanndleClose}>
         <ul className="flex flex-col items-center gap-[34px] border-b-[1px] border-b-grayViolet pb-[34px]">
           <li>Features</li>
           <li>Pricing</li>

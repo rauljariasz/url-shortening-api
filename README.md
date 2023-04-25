@@ -6,7 +6,7 @@
   
  This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
   
- [![](https://img.shields.io/static/v1?label=LiveSite&message=Click&color=blue)](https://rauljariasz.github.io/url-shortening-api/)  [![](https://img.shields.io/static/v1?label=Solution&message=Click&color=blue)](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
+ [![](https://img.shields.io/static/v1?label=LiveSite&message=Click&color=blue)](https://rauljariasz.github.io/url-shortening-api/)  [![](https://img.shields.io/static/v1?label=Solution&message=Click&color=blue)](https://www.frontendmentor.io/solutions/url-shortening-landing-page-with-react-and-tailwind-oI0JJHW_d3)
  
 </div>
 

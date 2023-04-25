@@ -21,3 +21,37 @@ Users should be able to:
 - Copy the shortened link to their clipboard in a single click
 - Receive an error message when the `form` is submitted if:
   - The `input` field is empty
+<br>
+
+<h2 align="center">Build with</h2>
+
+<div align="center">
+  
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+  ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+  
+</div>
+
+<br>
+
+<div align="center">
+<details open>
+  <summary><h2><b>🎨 Designs</b></h2></summary>
+<br>
+
+![desktop-design](https://user-images.githubusercontent.com/113625378/234152436-6acde0d0-4a32-4a24-a437-d0fba698af43.jpg)
+![mobile-active-states](https://user-images.githubusercontent.com/113625378/234152463-3557d4c6-0f48-426b-a8c3-d569912d6fa8.jpg)
+
+</details>
+</div>
+<br>
+
+<div align="center">
+<b>Thanks for look at it ♥.</b>
+  
+  [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rauljariasz@gmail.com)
+  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rauljariasz/)
+  [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/rauljariasz/)
+</div>

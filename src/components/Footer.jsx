@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Features */}
           <div className='flex justify-center mt-[50px] lg:mt-0'>
             <ul className='text-gray-400 text-center flex flex-col gap-[20px] lg:text-start'>
-              <p className='text-white font-bold'>Features</p>
+              <li className='text-white font-bold'>Features</li>
               <li className='hover:text-primary'>
                 <a href="#Footer" rel="noopener noreferrer">Link Shortening</a>
               </li>
@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Resources */}
           <div className='flex justify-center mt-[50px] lg:mt-0'>
             <ul className='text-gray-400 text-center flex flex-col gap-[20px] lg:text-start'>
-              <p className='text-white font-bold'>Resources</p>
+              <li className='text-white font-bold'>Resources</li>
               <li className='hover:text-primary'>
                 <a href="#Footer" rel="noopener noreferrer">Blog</a>
               </li>
@@ -51,7 +51,7 @@ const Footer = () => {
           {/* Company */}
           <div className='flex justify-center mt-[50px] lg:mt-0'>
             <ul className='text-gray-400 text-center flex flex-col gap-[20px] lg:text-start'>
-              <p className='text-white font-bold'>Company</p>
+              <li className='text-white font-bold'>Company</li>
               <li className='hover:text-primary'>
                 <a href="#Footer" rel="noopener noreferrer">About</a>
               </li>
